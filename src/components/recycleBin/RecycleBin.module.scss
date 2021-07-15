@@ -1,0 +1,39 @@
+
+.wrapper {
+  background-color: #323232;
+}
+
+.recycleBinContent {
+  float: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin-right: 30px;
+  width: 370px;
+
+
+  li:nth-child(2) {
+    span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    span:nth-child(1) {
+      margin-right: 24px;
+    }
+  }
+
+  li:nth-child(3) {
+    text-transform: uppercase;
+
+    color: #fff;
+    font-size: 20px;
+
+    span:nth-child(1) {
+      margin-right: 16px;
+
+    }
+  }
+}

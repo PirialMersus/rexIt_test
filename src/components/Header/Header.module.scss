@@ -1,0 +1,39 @@
+@import './../../common/styles/variables';
+
+.wrapper {
+  background-color: #6c6c6a;
+
+
+  .headerContent {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        span {
+          color: $textColor;
+        }
+      }
+
+      .logoItem {
+        position: relative;
+
+        img {
+          position: relative;
+          z-index: 4;
+          //top: 0;
+          //left: 0;
+          //top: -100px;
+          transform: translateY(-50px);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import './../../common/styles/variables';
+
+.wrapper {
+  background-image: url('./../../img/aboutCrackerBack.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .aboutCrackerContent {
+
+    h3 {
+      margin-top: 74px;
+      margin-bottom: 60px;
+      font-size: 48px;
+      letter-spacing: 10px;
+      line-height: 60px;
+      color: #666666;
+      text-transform: uppercase;
+    }
+
+    .transparentSquare {
+      //position: absolute;
+      transform: translateX(160px);
+      width: 1270px;
+      height: 360px;
+      background-color: rgba(215, 191, 191, 0.8);;
+      p {
+
+      }
+    }
+    .crackerConstructor{
+      margin-top: 146px;
+
+      h3{
+        font-size: 48px;
+        letter-spacing: 10px;
+        line-height: 60px;
+        color: #333333;
+      }
+    }
+  }
+}
