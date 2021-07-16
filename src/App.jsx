@@ -14,7 +14,6 @@ function App() {
             <Header/>
             <Slider/>
             <AboutCracker/>
-            <CrackerConstructor/>
             <Footer/>
         </div>
     );

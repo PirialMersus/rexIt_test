@@ -24,18 +24,120 @@
       width: 1270px;
       height: 360px;
       background-color: rgba(215, 191, 191, 0.8);;
+
       p {
 
       }
     }
-    .crackerConstructor{
+
+    .crackerConstructor {
       margin-top: 146px;
 
-      h3{
+      h3 {
         font-size: 48px;
         letter-spacing: 10px;
         line-height: 60px;
         color: #333333;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 620px;
+        overflow: hidden;
+
+        span {
+          text-transform: uppercase;
+          float: right;
+          font-size: 24px;
+          line-height: 36px;
+          color: #333333;
+          font-weight: 700;
+          font-family: "Lato";
+        }
+
+        span:nth-child(2) {
+          margin-right: 30px;
+        }
+      }
+
+      .tableWithScrollInputs {
+        overflow: hidden;
+        >li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+
+          }
+
+          > div {
+            width: 620px;
+            margin: 0 auto;
+          }
+
+          > span {
+            font-size: 30px;
+            line-height: 36px;
+            color: #333333;
+            font-weight: 400;
+          }
+
+          .btn {
+            max-width: 400px;
+            height: 60px;
+            border-radius: 30px;
+            border: 1px solid #ff4200;
+            position: relative;
+            cursor: pointer;
+
+            span {
+              font-size: 24px;
+              line-height: 60px;
+              color: #ff4200;
+              font-weight: 700;
+              text-align: center;
+              text-transform: uppercase;
+            }
+
+            svg {
+              position: absolute;
+              top: 50%;
+              right: 34px;
+              font-size: 24px;
+              color: #ff4200;
+              font-weight: 400;
+              transform: translateY(-45%);
+
+            }
+          }
+        }
+
+        >li:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        >li:last-child {
+          float: right;
+          margin-bottom: 54px;
+
+          >div{
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+            filter: drop-shadow(0 0 3px rgba(0,0,0,0.12)) drop-shadow(0px 6px 3px rgba(0,0,0,0.24));
+            background-color: #ff4200;
+            border: 1px solid ;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              color: #fff;
+              font-size: 16px;
+            }
+          }
+        }
       }
     }
   }

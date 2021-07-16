@@ -1,0 +1,44 @@
+.wrappper {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  border: 1px solid #ff4200;
+  z-index: 999;
+  border-radius: 30px;
+  background-color: #fff;
+
+  ul {
+
+    li {
+
+      span {
+        margin: 0 auto;
+        font-size: 24px;
+        line-height: 60px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 14px;
+        border-bottom: 1px solid #ff4200;
+      }
+    }
+    li:last-child{
+      border-bottom: none;
+    }
+
+    li:first-child{
+      span {
+        color: #abaaac !important;
+      }
+    }
+
+    li:not(:first-child) {
+      span {
+        color: #ff4200;
+      }
+    }
+
+  }
+
+}
