@@ -1,16 +1,28 @@
 
 .wrapper {
   background-color: #323232;
+
+  .recycleContent {
+    display: flex;
+    justify-content: space-between;
+
+    >img {
+      transform: translateY(50%);
+    }
+  }
 }
 
 .recycleBinContent {
-  float: right;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   margin-right: 30px;
   width: 370px;
+
+  li {
+    cursor: pointer;
+  }
 
 
   li:nth-child(2) {

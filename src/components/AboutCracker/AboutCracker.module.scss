@@ -5,8 +5,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  //overflow-x: hidden;
 
   .aboutCrackerContent {
+
 
     h3 {
       margin-top: 74px;
@@ -21,7 +23,7 @@
     .transparentSquare {
       //position: absolute;
       transform: translateX(160px);
-      width: 1270px;
+      width: 100vw;
       height: 360px;
       background-color: rgba(215, 191, 191, 0.8);;
 
@@ -61,12 +63,12 @@
       }
 
       .tableWithScrollInputs {
-        overflow: hidden;
+        //overflow: hidden;
         >li {
           display: flex;
           justify-content: space-between;
           align-items: center;
-
+          
           img {
 
           }
@@ -81,6 +83,7 @@
             line-height: 36px;
             color: #333333;
             font-weight: 400;
+            min-width: 74px;
           }
 
           .btn {
@@ -118,10 +121,12 @@
         }
 
         >li:last-child {
-          float: right;
-          margin-bottom: 54px;
+          margin-bottom: 44px;
+          padding-bottom: 10px;
+          overflow: hidden;
 
           >div{
+            position: relative;
             width: 60px;
             height: 60px;
             border-radius: 30px;
@@ -135,6 +140,31 @@
             svg {
               color: #fff;
               font-size: 16px;
+            }
+            >button {
+              position: absolute;
+              transition: all 0.5s ease;
+              top: -2px;
+              left: 0;
+              width: max-content;
+              padding-left: 17px;
+              padding-right: 17px;
+              transform: translateX(90px);
+              height: 64px;
+              border-radius: 32px;
+              border: none;
+              cursor: pointer;
+              color: #fff;
+              font-size: 24px;
+              line-height: 64px;
+              font-weight: 700;
+              text-transform: uppercase;
+              background-color: #ff4200;
+            }
+          }
+          >div:hover{
+            >button {
+              transform: translateX(-135px);
             }
           }
         }

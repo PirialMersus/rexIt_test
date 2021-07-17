@@ -9,12 +9,12 @@ export const Header = () => {
             <div className={styles.commonContainer}>
                 <div className={s.headerContent}>
                     <ul>
-                        <li className={s.logoItem}><img src={logo} alt="logo"/></li>
-                        <li><span>Home</span></li>
-                        <li><span>About us</span></li>
-                        <li><span>Contacts</span></li>
-                        <li><span>Checkout</span></li>
-                        <li><span>Account</span></li>
+                        {/*<li className={s.logoItem}><img src={logo} alt="logo"/></li>*/}
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Checkout</a></li>
+                        <li><a href="#">Account</a></li>
                     </ul>
                 </div>
             </div>

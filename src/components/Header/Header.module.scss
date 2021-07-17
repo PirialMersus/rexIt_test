@@ -6,32 +6,27 @@
 
   .headerContent {
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    //display: flex;
+    ////flex-direction: column;
+    //align-items: center;
+    //justify-content: flex-end;
 
-    ul {
+    >ul {
       width: 100%;
+      height: 100%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: flex-end;
 
-      li {
-        span {
+      >li {
+        a {
+          padding: 14px 32px;
           color: $textColor;
+          margin-left: 26px;
+          transition: all 0.3s ease;
         }
-      }
-
-      .logoItem {
-        position: relative;
-
-        img {
-          position: relative;
-          z-index: 4;
-          //top: 0;
-          //left: 0;
-          //top: -100px;
-          transform: translateY(-50px);
+        a:hover {
+          border-bottom: 4px solid #ff4200;
         }
       }
     }
